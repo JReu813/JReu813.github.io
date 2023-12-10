@@ -12,8 +12,9 @@ class BroadwayMap {
 
 		vis.broadwayMap = L.map('broadway-map').setView([40.757980, -73.985545], 16);
 		L.Icon.Default.imagePath = 'img/';
-		L.tileLayer('https://watercolormaps.collection.cooperhewitt.org/tile/watercolor/{z}/{x}/{y}.jpg”', {
-			attribution: '© OpenStreetMap'
+		L.tileLayer('https://watercolormaps.collection.cooperhewitt.org/tile/watercolor/{z}/{x}/{y}.jpg', {
+			maxZoom: 18,
+			attribution: 'Maptiles by Stamen Design, under <a target="_blank" href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a target="_top" href="https://www.openstreetmap.org/#map=4/38.01/-95.84">OpenStreetMap</a>, under <a target="_top" href="http://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0'
 		}).addTo(vis.broadwayMap);
 		vis.stationGroup = L.layerGroup().addTo(vis.broadwayMap);
 
