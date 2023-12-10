@@ -1,0 +1,112 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    align-content: center;
+}
+
+.container {
+    height: 93%;
+    width: 100%;
+}
+
+#svgs {
+    height: 100%;
+    width: 100%;
+}
+
+.col {
+    height: 100%;
+    width: 100%;
+}
+
+#timeline {
+    height: 70%;
+    width: 100%;
+}
+
+#isotype {
+    height: 70%;
+    width: 100%;
+}
+
+#title {
+    height: 7%;
+    text-align: center;
+    font-size: 35px;
+}
+
+.title {
+    text-anchor: middle;
+    font-size: 20px;
+}
+
+#percent {
+    font-size: 28px;
+    font-weight: bold;
+    text-anchor: middle;
+}
+
+#capacity {
+    font-size: 14px;
+    text-anchor: middle;
+}
+
+.section {
+    height: 100vh;
+}
+
+.fp-overflow {
+    height: 100vh;
+}
+
+#pageTitle {
+    text-anchor: middle;
+    font-weight: bold;
+    font-size: 85px;
+}
+
+#broadway-map {
+    align-self: center;
+    height: 90%;
+    width: 90%
+}
+
+#emp-vis {
+    height: 83%;
+    width: 95%;
+}
+
+.labels {
+    text-anchor: start;
+    alignment-baseline: middle;
+}
+
+#main {
+    height: 48vh;
+    width: 99vw;
+}
+
+#secondary {
+    height: 45vh;
+    width: 98vw;
+}
+
+.mtitle {
+    text-anchor: middle;
+    font-size: 25px;
+}
+
+.minititle {
+    text-anchor: middle;
+}
+
+.totals {
+    text-anchor: middle;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.labels {
+    text-anchor: start;
+    alignment-baseline: middle;
+}

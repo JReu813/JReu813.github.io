@@ -1,0 +1,511 @@
+[{"season":"2006/2007",
+  "grossRevenue":
+  {
+    "musicals": 843650000,
+    "plays": 94890000,
+    "specials": 0,
+    "total": 938540000
+  },
+  "attendance":
+  {
+    "musicals": 10832000,
+    "plays": 1479000,
+    "specials": 0,
+    "total": 12311000
+  },
+  "weeksPlaying":
+  {
+    "musicals": 1212,
+    "plays": 297,
+    "specials": 0,
+    "total": 1509
+  },
+  "productions":
+  {
+    "musicals": 17,
+    "plays": 18,
+    "specials": 0,
+    "total": 35
+  }
+},
+{"season": "2007/2008",
+  "grossRevenue":
+  {
+    "musicals": 820410000,
+    "plays": 117420000,
+    "specials": 0,
+    "total": 937830000
+  },
+  "attendance":
+  {
+    "musicals": 10393000,
+    "plays": 1873000,
+    "specials": 0,
+    "total": 12266000
+  },
+  "weeksPlaying":
+  {
+    "musicals": 1188,
+    "plays": 372,
+    "specials": 0,
+    "total": 1560
+  },
+  "productions":
+  {
+    "musicals": 13,
+    "plays": 23,
+    "specials": 0,
+    "total": 36
+  }
+},
+  {"season":"2008/2009",
+  "grossRevenue":
+  {
+    "musicals": 775810000,
+    "plays": 149830000,
+    "specials": 17610000,
+    "total": 943250000
+  },
+  "attendance":
+  {
+    "musicals": 9637000,
+    "plays": 2271000,
+    "specials": 238000,
+    "total": 12146000
+  },
+  "weeksPlaying":
+  {
+    "musicals": 1065,
+    "plays": 452,
+    "specials": 31,
+    "total": 1548
+  },
+  "productions":
+  {
+    "musicals": 14,
+    "plays": 24,
+    "specials": 5,
+    "total": 43
+  }
+},
+  {"season":"2009/2010",
+    "grossRevenue":
+    {
+      "musicals": 860600000,
+      "plays": 159610000,
+      "specials": 0,
+      "total": 1020210000
+    },
+    "attendance":
+    {
+      "musicals": 9694000,
+      "plays": 2193000,
+      "specials": 0,
+      "total": 11887000
+    },
+    "weeksPlaying":
+    {
+      "musicals": 1060,
+      "plays": 404,
+      "specials": 0,
+      "total": 1464
+    },
+    "productions":
+    {
+      "musicals": 17,
+      "plays": 22,
+      "specials": 0,
+      "total": 39
+    }
+  },
+  {"season":"2010/2011",
+    "grossRevenue":
+    {
+      "musicals": 915670000,
+      "plays": 158410000,
+      "specials": 6490000,
+      "total": 1080570000
+    },
+    "attendance":
+    {
+      "musicals": 10370000,
+      "plays": 2109000,
+      "specials": 56000,
+      "total": 12535000
+    },
+    "weeksPlaying":
+    {
+      "musicals": 1163,
+      "plays": 416,
+      "specials": 9,
+      "total": 1588
+    },
+    "productions":
+    {
+      "musicals": 14,
+      "plays": 25,
+      "specials": 3,
+      "total": 42
+    }
+  },
+  {"season":"2011/2012",
+    "grossRevenue":
+    {
+      "musicals": 933900000,
+      "plays": 186120000,
+      "specials": 19290000,
+      "total": 1139310000
+    },
+    "attendance":
+    {
+      "musicals": 9846000,
+      "plays": 2340000,
+      "specials": 149000,
+      "total": 12335000
+    },
+    "weeksPlaying":
+    {
+      "musicals": 1080,
+      "plays": 420,
+      "specials": 22,
+      "total": 1522
+    },
+    "productions":
+    {
+      "musicals": 15,
+      "plays": 23,
+      "specials": 3,
+      "total": 41
+    }
+  },
+  {"season":"2012/2013",
+    "grossRevenue":
+    {
+      "musicals": 930410000,
+      "plays": 198310000,
+      "specials": 10010000,
+      "total": 1138730000
+    },
+    "attendance":
+    {
+      "musicals": 9082000,
+      "plays": 2403000,
+      "specials": 86000,
+      "total": 11571000
+    },
+    "weeksPlaying":
+    {
+      "musicals": 978,
+      "plays": 437,
+      "specials": 15,
+      "total": 1430
+    },
+    "productions":
+    {
+      "musicals": 15,
+      "plays": 26,
+      "specials": 5,
+      "total": 46
+    }
+  },
+  {"season":"2013/2014",
+    "grossRevenue":
+    {
+      "musicals": 1072510000,
+      "plays": 189480000,
+      "specials": 6890000,
+      "total": 1268880000
+    },
+    "attendance":
+    {
+      "musicals": 10070000,
+      "plays": 2038000,
+      "specials": 107000,
+      "total": 12215000
+    },
+    "weeksPlaying":
+    {
+      "musicals": 1123,
+      "plays": 355,
+      "specials": 18,
+      "total": 1496
+    },
+    "productions":
+    {
+      "musicals": 16,
+      "plays": 23,
+      "specials": 3,
+      "total": 42
+    }
+  },
+  {"season":"2014/2015",
+    "grossRevenue":
+    {
+      "musicals": 1108690000,
+      "plays": 247570000,
+      "specials": 8980000,
+      "total": 1365240000
+    },
+    "attendance":
+    {
+      "musicals": 10649000,
+      "plays": 2370000,
+      "specials": 85000,
+      "total": 13104000
+    },
+    "weeksPlaying":
+    {
+      "musicals": 1224,
+      "plays": 395,
+      "specials": 7,
+      "total": 1626
+    },
+    "productions":
+    {
+      "musicals": 15,
+      "plays": 20,
+      "specials": 2,
+      "total": 37
+    }
+  },
+  {"season":"2015/2016",
+    "grossRevenue":
+    {
+      "musicals": 1173300000,
+      "plays": 181730000,
+      "specials": 18220000,
+      "total": 1373250000
+    },
+    "attendance":
+    {
+      "musicals": 11102000,
+      "plays": 2028000,
+      "specials": 188000,
+      "total": 13318000
+    },
+    "weeksPlaying":
+    {
+      "musicals": 1254,
+      "plays": 372,
+      "specials": 22,
+      "total": 1648
+    },
+    "productions":
+    {
+      "musicals": 16,
+      "plays": 20,
+      "specials": 3,
+      "total": 39
+    }
+  },
+  {"season":"2016/2017",
+    "grossRevenue":
+    {
+      "musicals": 1285180000,
+      "plays": 153760000,
+      "specials": 10460000,
+      "total": 1449400000
+    },
+    "attendance":
+    {
+      "musicals": 11363000,
+      "plays": 1799000,
+      "specials": 110000,
+      "total": 13272000
+    },
+    "weeksPlaying":
+    {
+      "musicals": 1239,
+      "plays": 324,
+      "specials": 17,
+      "total": 1580
+    },
+    "productions":
+    {
+      "musicals": 20,
+      "plays": 20,
+      "specials": 5,
+      "total": 45
+    }
+  },
+  {"season":"2017/2018",
+    "grossRevenue":
+    {
+      "musicals": 1440000000,
+      "plays": 189400000,
+      "specials": 68270000,
+      "total": 1697670000
+    },
+    "attendance":
+    {
+      "musicals": 11454000,
+      "plays": 2125000,
+      "specials": 214000,
+      "total": 13793000
+    },
+    "weeksPlaying":
+    {
+      "musicals": 1216,
+      "plays": 367,
+      "specials": 41,
+      "total": 1624
+    },
+    "productions":
+    {
+      "musicals": 10,
+      "plays": 20,
+      "specials": 3,
+      "total": 33
+    }
+  },
+  {"season":"2018/2019",
+    "grossRevenue":
+    {
+      "musicals": 1431640000,
+      "plays": 336910000,
+      "specials": 60760000,
+      "total": 1829310000
+    },
+    "attendance":
+    {
+      "musicals": 11665000,
+      "plays": 2901000,
+      "specials": 202000,
+      "total": 14768000
+    },
+    "weeksPlaying":
+    {
+      "musicals": 1278,
+      "plays": 421,
+      "specials": 38,
+      "total": 1737
+    },
+    "productions":
+    {
+      "musicals": 13,
+      "plays": 21,
+      "specials": 4,
+      "total": 38
+    }
+  },
+  {"season":"2019/2020",
+    "grossRevenue":
+    {
+      "musicals": 1060360000,
+      "plays": 232680000,
+      "specials": 65600000,
+      "total": 1358640000
+    },
+    "attendance":
+    {
+      "musicals": 8428000,
+      "plays": 2198000,
+      "specials": 511000,
+      "total": 11137000
+    },
+    "weeksPlaying":
+    {
+      "musicals": 881,
+      "plays": 316,
+      "specials": 85,
+      "total": 1282
+    },
+    "productions":
+    {
+      "musicals": 6,
+      "plays": 14,
+      "specials": 13,
+      "total": 33
+    }
+  },
+  {"season":"2020/2021",
+    "grossRevenue":
+    {
+      "musicals": 0,
+      "plays": 0,
+      "specials": 0,
+      "total": 0
+    },
+    "attendance":
+    {
+      "musicals": 0,
+      "plays": 0,
+      "specials": 0,
+      "total": 0
+    },
+    "weeksPlaying":
+    {
+      "musicals": 0,
+      "plays": 0,
+      "specials": 0,
+      "total": 0
+    },
+    "productions":
+    {
+      "musicals": 0,
+      "plays": 0,
+      "specials": 0,
+      "total": 0
+    }
+  },
+  {"season":"2021/2022",
+    "grossRevenue":
+    {
+      "musicals": 683380000,
+      "plays": 135310000,
+      "specials": 26670000,
+      "total": 845360000
+    },
+    "attendance":
+    {
+      "musicals": 5175000,
+      "plays": 1283000,
+      "specials": 271000,
+      "total": 6729000
+    },
+    "weeksPlaying":
+    {
+      "musicals": 649,
+      "plays": 250,
+      "specials": 47,
+      "total": 946
+    },
+    "productions":
+    {
+      "musicals": 14,
+      "plays": 22,
+      "specials": 3,
+      "total": 39
+    }
+  },
+  {"season":"2022/2023",
+    "grossRevenue":
+    {
+      "musicals": 1325980000,
+      "plays": 250050000,
+      "specials": 1560000,
+      "total": 1577590000
+    },
+    "attendance":
+    {
+      "musicals": 9847000,
+      "plays": 2429000,
+      "specials": 8000,
+      "total": 12284000
+    },
+    "weeksPlaying":
+    {
+      "musicals": 1075,
+      "plays": 398,
+      "specials": 1,
+      "total": 1474
+    },
+    "productions":
+    {
+      "musicals": 15,
+      "plays": 24,
+      "specials": 1,
+      "total": 40
+    }
+  }
+]
