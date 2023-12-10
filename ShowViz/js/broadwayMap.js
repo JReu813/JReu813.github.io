@@ -10,7 +10,7 @@ class BroadwayMap {
 	initVis () {
 		let vis = this;
 
-		vis.broadwayMap = L.map('broadway-map').setView([40.757980, -73.985545], 16);
+		vis.broadwayMap = L.map(vis.parentElement).setView([40.757980, -73.985545], 16);
 		L.Icon.Default.imagePath = 'img/';
 		L.tileLayer('https://watercolormaps.collection.cooperhewitt.org/tile/watercolor/{z}/{x}/{y}.jpg', {
 			maxZoom: 18,
