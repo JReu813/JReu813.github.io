@@ -64,12 +64,71 @@ class BroadwayMap {
 
 		let dates = []
 		vis.data.forEach((row,i) => {
-			if (row["reopeningDate"] !== "N/A") {
+				if (row["reopeningDate"] !== "N/A") {
 					dates.push(row["reopeningDate"])
 				}
 			}
 		)
 		console.log(dates)
+
+		let sliderValue = d3.extent(dates);
+		console.log(sliderValue)
+
+		let slider = document.getElementById('slider');
+
+		function timestamp(str) {
+			return new Date(str).getTime();
+		}
+
+		noUiSlider.create(slider, {
+			start: [timestamp(sliderValue[0])],
+			// tooltips: true,
+			pips: true,
+			step: 24 * 60 * 60 * 1000,
+			behaviour: 'drag',
+			connect: true,
+			range: {
+				min: timestamp(sliderValue[0]),
+				max: timestamp(sliderValue[1])
+			},
+			format: wNumb({
+				decimals: 0,
+			})})
+		slider.style.width = '1000px'
+
+		let dateValues = [
+			document.getElementById('slider-value'),
+		];
+
+		let formatter = new Intl.DateTimeFormat('en-US', {
+			dateStyle: 'full'
+		});
+
+		slider.noUiSlider.on('update', function (values, handle) {
+			dateValues[handle].innerHTML = formatter.format(new Date(+values[handle]));
+		});
+
+		//comparison between theaters and circles
+
+		slider.noUiSlider.on('slide', function (values, handle) {
+			let sliderReturn = slider.noUiSlider.get();
+			console.log("slider vals " + sliderReturn)
+			vis.data.forEach((row,i) => {
+				let reopeningDate = (new Date(row["reopeningDate"]).getTime()).toString()
+				console.log("theater vals " + reopeningDate)
+				if (sliderReturn >= reopeningDate) {
+					// console.log("working!")
+					let marker = L.marker([vis.data[i]["lat"], vis.data[i]["long"]], {icon: BrightIcon})
+						.addTo(vis.broadwayMap)
+
+				}
+				if (reopeningDate >= sliderReturn) {
+					// console.log("working!")
+					let marker = L.marker([vis.data[i]["lat"], vis.data[i]["long"]], {icon: DarkIcon})
+						.addTo(vis.broadwayMap)
+				}
+			})
+		})
 	}
 }
 

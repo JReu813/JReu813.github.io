@@ -67,8 +67,9 @@ body {
 
 #broadway-map {
     align-self: center;
-    height: 90%;
-    width: 90%
+    margin: auto;
+    height: 80%;
+    width: 80%
 }
 
 #emp-vis {

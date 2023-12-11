@@ -29,6 +29,14 @@ svg1.append('svg:image')
     .attr("height", h)
     .attr("transform", `translate(${w-326}, 0)`);
 
+let finalslide = d3.select("#s6").append("svg")
+    .attr("width", w)
+    .attr("height", h);
+finalslide.append('svg:image')
+    .attr('href', 'img/EndScreen.svg')
+    .attr("height", h)
+    .attr("transform", `translate(30, 0)`);
+
 let dateFormatter = d3.timeFormat("%Y-%m-%d");
 let dateParser = d3.timeParse("%Y-%m-%d");
 

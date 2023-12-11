@@ -89,7 +89,7 @@ class EmpVis {
             .enter()
             .append('rect')
             .merge(vis.bars)
-            .attr("fill", "green")
+            .attr("fill", "#c32a2a")
             .attr('x', d => vis.xScale(d.year))
             .attr("y", d => vis.yScale(parseInt(d.employees)))
             .attr("width", vis.xScale.bandwidth() - 5)
@@ -97,21 +97,20 @@ class EmpVis {
 
             .on('mouseover', function(event, d){
                 d3.select(this)
-                    .attr('fill', 'rgba(173,222,255,0.62)')
-
+                    .attr('fill', "#d17c72")
                     vis.tooltip
                         .style("opacity", 1)
                         .style("left", event.pageX + "px")
                         .style("top", event.pageY + "px")
                         .html(`
-                                 <div style="border: thin solid grey; border-radius: 5px; background: lightgrey; padding: 20px">
+                                 <div style="border: thin solid grey; border-radius: 5px; background: darkred; padding: 20px">
                                  <h4> Year: ${d.year}</h4>
                                  <h4> Employees in the theater industry: ${d["employees"]}</h4>
                              </div>`);
                 })
             .on('mouseout', function(event, d){
                 d3.select(this)
-                    .attr("fill", d => ("green"))
+                    .attr("fill", d => ("#c32a2a"))
                 vis.tooltip
                     .style("opacity", 0)
                     .style("left", 0)
