@@ -18,7 +18,7 @@ class TimeLine {
     initVis() {
         let vis = this;
 
-        vis.margin = {top: 20, right: 55, bottom: 20, left: 40};
+        vis.margin = {top: 20, right: 55, bottom: 35, left: 40};
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - 2 * vis.margin.left - 2 * vis.margin.right;
         vis.height = (document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom);
@@ -80,6 +80,11 @@ class TimeLine {
        vis.yaxis.append("text")
             .text("Weekly Attendees")
             .attr("transform", "rotate(270)");
+
+        vis.svg.append("text")
+            .text("Date")
+            .attr("class", "axis-title")
+            .attr("transform", `translate(${vis.width/2}, ${vis.height+35})`);
 
         // (Filter, aggregate, modify data)
         vis.wrangleData();

@@ -212,3 +212,7 @@ h4 {
 h5 {
     padding-bottom: 10px;
 }
+
+#sources {
+    height: 80%;
+}
