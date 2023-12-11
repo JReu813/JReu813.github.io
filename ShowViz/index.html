@@ -12,7 +12,7 @@
 <body>
 <div id="fullpage">
     <div class="section" id="s1" data-anchor="1"></div>
-    <div class="section" id="s2" data-anchor="1">
+    <div class="section" id="s2" data-anchor="2">
         <br>
         <div id="broadway-map" class="mx-auto" ></div>
         <br>
@@ -83,6 +83,9 @@
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
+        navigation: true,
+        navigationTooltips: ["Title", "Map", "Overview", "Attendance", "Employment", "End Card"],
+        licenseKey: 'gplv3-license',
         sectionsColor: ['#000000', '#caab55', 'whitesmoke', '#bbbbbb', 'whitesmoke', '#000000']
     });
 </script>
