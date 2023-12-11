@@ -76,6 +76,20 @@ class MohamedVis {
         vis.svg.append("g")
             .attr("class", "y-axis axis");
 
+        vis.info = vis.svg.append("g")
+            .attr("class", "info");
+
+        vis.info.append("svg:image")
+            .attr("href", "img/arrow.svg")
+            .attr("height", vis.height/7);
+
+        vis.info.append("text")
+            .text("Click the circles to get an")
+            .attr("transform", "translate(165, 0)");
+        vis.info.append("text")
+            .text("in-depth view of each season!")
+            .attr("transform", "translate(165, 15)");
+
         vis.yaxis = vis.svg.append("g")
             .append("text")
             .attr("class", "axisLabel");
@@ -238,6 +252,10 @@ class MohamedVis {
             .duration(400)
             .attr("cy", d => vis.y(d[vis.selectValue].total));
         vis.circles.exit().remove();
+
+        vis.info.transition()
+            .duration(400)
+            .attr("transform", `translate(${vis.x(vis.seasons[12])+12}, ${vis.y(vis.data[12][vis.selectValue].total)-vis.height/7})`);
 
         // Update axes
         vis.svg.select(".y-axis").call(vis.yAxis);
