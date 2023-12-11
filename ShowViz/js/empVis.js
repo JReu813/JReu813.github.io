@@ -51,8 +51,8 @@ class EmpVis {
             .scale(vis.yScale)
 
         vis.xaxis = vis.svg.append("g")
-            .attr("class", "axis-title")
-            .attr("transform", `translate(${vis.width/2}, 650)`);
+            .attr("class", "x-axis-label")
+            .attr("transform", `translate(${vis.width/2}, 400)`);
 
         vis.xaxis.append("text")
             .text("Years")
