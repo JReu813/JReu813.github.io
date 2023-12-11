@@ -17,17 +17,27 @@ svg1.append("circle")
 svg1.append("text")
     .attr("id", "pageTitle")
     .text("ShowViz!")
-    .attr("stroke", "gold")
+    .attr("stroke", "#cca354")
     .attr("fill", "#c32a2a")
-    .attr("transform", `translate(${w/2}, ${h/2})`)
+    .attr("transform", `translate(${w/2}, ${h/2-5})`);
+svg1.append("text")
+    .attr("class", "pageSubtitle")
+    .text("Visualizing Broadway")
+    .attr("transform", `translate(${w/2}, ${h/2+50})`);
+svg1.append("text")
+    .attr("class", "pageSubtitle")
+    .text("through a Pandemic")
+    .attr("transform", `translate(${w/2}, ${h/2+90})`);
 svg1.append('svg:image')
     .attr('href', 'img/curtain.svg')
     .attr("height", h)
-    .attr("transform", "scale(1, 1)");
-svg1.append('svg:image')
-    .attr('href', 'img/curtainr.svg')
+    .attr("transform", "scale(0.6, 1)");
+let curtainr = svg1.append("g")
+    .attr("transform", `translate(${w}, 0)`)
+curtainr.append('svg:image')
+    .attr('href', 'img/curtain.svg')
     .attr("height", h)
-    .attr("transform", `translate(${w-326}, 0)`);
+    .attr("transform", "scale(-0.6, 1)");
 
 let finalslide = d3.select("#s6").append("svg")
     .attr("width", w)
