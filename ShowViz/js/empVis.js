@@ -12,7 +12,7 @@ class EmpVis {
         let vis = this;
         console.log("success")
 
-        vis.margin = {top: 20, right: 30, bottom: 20, left: 40};
+        vis.margin = {top: 20, right: 90, bottom: 20, left: 40};
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
@@ -59,7 +59,7 @@ class EmpVis {
 
         vis.yaxis = vis.svg.append("g")
             .attr("class", "axis-title")
-            .attr("transform", `translate(-71, ${vis.height/2})`);
+            .attr("transform", `translate(-50, ${vis.height/2})`);
 
         vis.yaxis.append("text")
             .text("Employees")
