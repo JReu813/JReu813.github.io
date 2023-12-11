@@ -25,12 +25,12 @@ class EmpVis {
             .attr('transform', `translate (${2*vis.margin.left}, ${vis.margin.top})`);
 
         // add title
-        vis.svg.append('g')
-            .attr('class', 'title bar-title')
-            .append('text')
-            .text(`Employment Data`)
-            .attr('transform', `translate(${vis.margin.left+vis.width/ 2}, 20)`)
-            .attr('text-anchor', 'middle');
+        // vis.svg.append('g')
+        //     .attr('class', 'title bar-title')
+        //     .append('text')
+        //     .text(`Employment Data`)
+        //     .attr('transform', `translate(${vis.margin.left+vis.width/ 2}, 20)`)
+        //     .attr('text-anchor', 'middle');
 
         // tooltip
         vis.tooltip = d3.select(`#${vis.tooltipElement}`).append('div')
@@ -49,6 +49,21 @@ class EmpVis {
 
         vis.yAxis = d3.axisLeft()
             .scale(vis.yScale)
+
+        vis.xaxis = vis.svg.append("g")
+            .attr("class", "axis-title")
+            .attr("transform", `translate(${vis.width/2}, 650)`);
+
+        vis.xaxis.append("text")
+            .text("Years")
+
+        vis.yaxis = vis.svg.append("g")
+            .attr("class", "axis-title")
+            .attr("transform", `translate(-71, ${vis.height/2})`);
+
+        vis.yaxis.append("text")
+            .text("Employees")
+            .attr("transform", "rotate(270)")
 
         vis.svg.append("g")
             .attr("class", "x-axis axis")
