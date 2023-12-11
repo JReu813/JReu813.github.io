@@ -41,7 +41,7 @@ curtainr.append('svg:image')
     .attr("height", h)
     .attr("transform", "scale(-0.6, 1)");
 
-let finalslide = d3.select("#s10").append("svg")
+let finalslide = d3.select("#s11").append("svg")
     .attr("width", w)
     .attr("height", h);
 finalslide.selectAll("cirlce")
