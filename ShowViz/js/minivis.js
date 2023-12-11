@@ -34,7 +34,7 @@ class MiniVis {
         //Totals Display
         vis.totals = vis.svg.append("g").attr("transform", `translate(${vis.width/2-26}, 0)`);
         vis.totals.append("svg:image")
-            .attr("href", "img/spiky.svg")
+            .attr("href", "img/chair.svg")
             .attr("class", "img")
             .attr("width", 110);
         vis.totals.append("text")
