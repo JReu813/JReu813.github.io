@@ -11,7 +11,7 @@ body {
 }
 
 #svgs {
-    height: 100%;
+    height: 80%;
     width: 100%;
 }
 
@@ -73,12 +73,12 @@ a:link {
 
 
 #timeline {
-    height: 70%;
+    height: 80%;
     width: 100%;
 }
 
 #isotype {
-    height: 70%;
+    height: 80%;
     width: 100%;
 }
 
@@ -127,7 +127,7 @@ a:link {
 #broadway-map {
     align-self: center;
     margin: auto;
-    height: 80%;
+    height: 70%;
     width: 80%
 }
 
@@ -196,4 +196,12 @@ text {
 
 #emp-tooltip {
     height: 10vh;
+}
+
+h4 {
+    padding-top: 10px;
+}
+
+h5 {
+    padding-bottom: 10px;
 }
