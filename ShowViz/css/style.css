@@ -216,3 +216,8 @@ h5 {
 #sources {
     height: 80%;
 }
+
+.names {
+    text-anchor: middle;
+    font-size: 40px;
+}
