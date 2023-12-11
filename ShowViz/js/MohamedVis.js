@@ -97,10 +97,9 @@ class MohamedVis {
         vis.subtitle = vis.svg.append("g")
             .attr("class", "info")
 
-        vis.subtitle.append("text")
-            .text("Luckily, the theater industry has recovered in some ways. In all of four different categories, numbers representing its success have increased to levels comparable to before the pandemic.")
-            .attr("transform", "translate(200, 300)");
-
+        // vis.subtitle.append("text")
+        //     .text("Luckily, the theater industry has recovered in some ways. In all of four different categories, numbers representing its success have increased to levels comparable to before the pandemic.")
+        //     .attr("transform", "translate(200, 300)");
 
         // Append a path for the area function, so that it is later behind the brush overlay
         vis.totPath = vis.svg.append("path")
