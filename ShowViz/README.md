@@ -9,4 +9,4 @@ We used fullPage.js for the layout of our website. Interacting with this interfa
 To make our work possible, we used Leaflet, Bootstrap, the noUiSlider, fullPage.js, and wNumb.js. Other than libraries associated with them, the rest of the files are based on labs/homeworks we've done in class thus far, or they are entirely our own.
 
 Project Website URL: https://jreu813.github.io/ShowViz/#a1
-Screencast URL: 
+Screencast URL: https://www.youtube.com/watch?v=XIa0fKcEpAY
