@@ -126,3 +126,7 @@ text {
    font-size: 18px;
     fill: #c32a2a;
 }
+
+.axis-title {
+    text-anchor: middle;
+}
