@@ -81,6 +81,16 @@ curtainr2.append('svg:image')
     .attr('href', 'img/curtain.svg')
     .attr("height", h)
     .attr("transform", "scale(-0.5, 1)");
+finalslide.append("svg:image")
+    .attr('href', 'img/rose.svg')
+    .attr("transform", `translate(${w/2}, ${h/9})`);
+finalslide.append("svg:image")
+    .attr('href', 'img/rose.svg')
+    .attr("transform", `translate(${2*w/3}, ${h/2+50})`);
+finalslide.append("svg:image")
+    .attr('href', 'img/rose.svg')
+    .attr("transform", `translate(${w/5}, ${h/2})`);
+
 
 let dateFormatter = d3.timeFormat("%Y-%m-%d");
 let dateParser = d3.timeParse("%Y-%m-%d");
