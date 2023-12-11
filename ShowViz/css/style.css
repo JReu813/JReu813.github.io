@@ -101,6 +101,12 @@ body {
     font-size: 85px;
 }
 
+.pageSubtitle {
+    text-anchor: middle;
+    font-weight: bold;
+    font-size: 38px;
+}
+
 #broadway-map {
     align-self: center;
     margin: auto;
