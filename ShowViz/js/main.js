@@ -42,10 +42,40 @@ curtainr.append('svg:image')
 let finalslide = d3.select("#s10").append("svg")
     .attr("width", w)
     .attr("height", h);
+finalslide.append("circle")
+    .attr("cx", w/2+10)
+    .attr("cy", h/2-10)
+    .attr("r", 220)
+    .attr("fill", "#626262");
+finalslide.append("circle")
+    .attr("cx", w/2)
+    .attr("cy", h/2)
+    .attr("r", 200)
+    .attr("fill", "whitesmoke");
+finalslide.append("text")
+    .attr("id", "pageTitle")
+    .text("ShowViz!")
+    .attr("stroke", "#cca354")
+    .attr("fill", "#c32a2a")
+    .attr("transform", `translate(${w/2}, ${h/2-5})`);
+finalslide.append("text")
+    .attr("class", "pageSubtitle")
+    .text("Visualizing Broadway")
+    .attr("transform", `translate(${w/2}, ${h/2+50})`);
+finalslide.append("text")
+    .attr("class", "pageSubtitle")
+    .text("through a Pandemic")
+    .attr("transform", `translate(${w/2}, ${h/2+90})`);
 finalslide.append('svg:image')
-    .attr('href', 'img/EndScreen.svg')
+    .attr('href', 'img/curtain.svg')
     .attr("height", h)
-    .attr("transform", `translate(30, 0)`);
+    .attr("transform", "scale(0.6, 1)");
+let curtainr2 = finalslide.append("g")
+    .attr("transform", `translate(${w}, 0)`)
+curtainr2.append('svg:image')
+    .attr('href', 'img/curtain.svg')
+    .attr("height", h)
+    .attr("transform", "scale(-0.6, 1)");
 
 let dateFormatter = d3.timeFormat("%Y-%m-%d");
 let dateParser = d3.timeParse("%Y-%m-%d");
@@ -95,7 +125,7 @@ function createVis(data) {
     timeLine = new TimeLine("timeline", weeklyAttendance, weeklyCapacity);
     broadwayMapPlain = new BroadwayMapPlain("broadway-map-plain", mapData)
     broadwayMap = new BroadwayMap("broadway-map", mapData);
-    myEmpVis = new EmpVis('emp-vis', "s5", empData);
+    myEmpVis = new EmpVis('emp-vis', "emp-tooltip", empData);
     mohamedVis = new MohamedVis("main", MohamedData);
     grossVis = new MiniVis("grossRevenue", MohamedData)
     attendVis = new MiniVis("attendance", MohamedData)

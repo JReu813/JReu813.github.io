@@ -55,7 +55,7 @@ class IsoType {
 
         //container to hold the grid
         vis.container = vis.svg.append("g")
-            .attr("transform", "translate(0, 20)");
+            .attr("transform", "translate(0, 60)");
 
         vis.svg.append("text")
             .attr("class", "title")
@@ -108,7 +108,7 @@ class IsoType {
                 return 3 + vis.width / 2 + ((d%vis.numRows) * 1.2 + 5) * Math.cos(3.5*Math.PI / 16 + Math.floor(d / vis.numCols) * Math.PI / 16) * vis.width / (2.5 * vis.numCols);
             })
             .attr('y', function (d) {
-                return 2 + vis.height - ((d%vis.numRows) * 2 + 6) * Math.sin(3.5*Math.PI / 16 + Math.floor(d / vis.numCols) * Math.PI / 16) * vis.height / (3 * vis.numRows);
+                return 2 + vis.height - ((d%vis.numRows) * 2 + 6) * Math.sin(3.5*Math.PI / 16 + Math.floor(d / vis.numCols) * Math.PI / 16) * vis.height / (2.5 * vis.numRows);
             })
             .attr('width', 14)
             .attr("height", 16)
@@ -131,7 +131,7 @@ class IsoType {
                 return vis.width / 2 + ((d%vis.numRows) * 1.2 + 5) * Math.cos(3.5*Math.PI / 16 + Math.floor(d / vis.numCols) * Math.PI / 16) * vis.width / (2.5 * vis.numCols);
             })
             .attr('y', function (d) {
-                return vis.height - ((d%vis.numRows) * 2 + 6) * Math.sin(3.5*Math.PI / 16 + Math.floor(d / vis.numCols) * Math.PI / 16) * vis.height / (3 * vis.numRows);
+                return vis.height - ((d%vis.numRows) * 2 + 6) * Math.sin(3.5*Math.PI / 16 + Math.floor(d / vis.numCols) * Math.PI / 16) * vis.height / (2.5 * vis.numRows);
             })
             .attr('width', 20)
             .attr("height", 20);
@@ -171,6 +171,7 @@ class IsoType {
     updateVis() {
         let vis = this;
         vis.drawGraph(vis.percent);
-        vis.title.text(`Broadway Attendance Data from ${vis.selectStart} to ${vis.selectEnd}`);
+        vis.title.attr("transform", "translate(0, 200)")
+            .text(`Broadway Attendance Data from ${vis.selectStart} to ${vis.selectEnd}`);
     }
 }
