@@ -43,9 +43,9 @@ class MohamedVis {
             .append("rect")
             .attr("class", "dots")
             .attr("x", 0)
-            .attr("y", (d, i) => i*(10+5))
-            .attr("width", 10)
-            .attr("height", 10)
+            .attr("y", (d, i) => i*(14+5))
+            .attr("width", 14)
+            .attr("height", 14)
             .attr("fill", (d, i) => vis.colors[i]);
 
         // Add one label in the legend for each name.
@@ -54,8 +54,8 @@ class MohamedVis {
             .enter()
             .append("text")
             .attr("class", "labels")
-            .attr("x", 10*1.2)
-            .attr("y", (d, i) => 5+i*(10+5))
+            .attr("x", 14*1.2)
+            .attr("y", (d, i) => 8+i*(14+5))
             .attr("fill", (d, i) => vis.colors[i])
             .text(d => d)
 

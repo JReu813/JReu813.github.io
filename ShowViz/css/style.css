@@ -103,10 +103,19 @@ body {
 .totals {
     text-anchor: middle;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .labels {
     text-anchor: start;
     alignment-baseline: middle;
+}
+
+.totalTitle {
+    text-anchor: middle;
+    font-size: 21px;
+}
+
+text {
+    font-family: "serif";
 }

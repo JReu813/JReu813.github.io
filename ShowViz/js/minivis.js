@@ -18,7 +18,7 @@ class MiniVis {
     initVis() {
         let vis = this;
 
-        vis.margin = {top: 50, right: 100, bottom: 30, left: 75};
+        vis.margin = {top: 50, right: 100, bottom: 30, left: 100};
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = (document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom);
@@ -32,15 +32,18 @@ class MiniVis {
             .attr("transform", `translate(${vis.margin.left}, ${vis.margin.top})`);
 
         //Totals Display
-        vis.totals = vis.svg.append("g");
+        vis.totals = vis.svg.append("g").attr("transform", `translate(${vis.width/2-26}, 0)`);
         vis.totals.append("svg:image")
             .attr("href", "img/spiky.svg")
             .attr("class", "img")
-            .attr("width", 125)
-            .attr("transform", `translate(${vis.width/2-32}, 0)`);
+            .attr("width", 110);
+        vis.totals.append("text")
+            .attr("class", "totalTitle")
+            .text("Total:")
+            .attr("transform", `translate(55, 49)`);
         vis.totalVal = vis.totals.append("text")
             .attr("class", "totals")
-            .attr("transform", `translate(${vis.width/2+31}, 72)`);
+            .attr("transform", `translate(55, 68)`);
 
         // Scales and axes
         vis.x = d3.scalePoint()

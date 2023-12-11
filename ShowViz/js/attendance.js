@@ -90,6 +90,8 @@ class IsoType {
             .attr("fill", (d, i) => vis.colors[i])
             .text(d => d)
 
+        vis.title = d3.select(`#${vis.titleElement}`).append("text");
+
         vis.wrangleData();
     }
 
@@ -170,8 +172,9 @@ class IsoType {
     updateVis() {
         let vis = this;
         vis.drawGraph(vis.percent);
-        document.getElementById(vis.titleElement).innerText="";
-        document.getElementById(vis.titleElement)
-            .append(`Broadway Attendance Data from ${vis.selectStart} to ${vis.selectEnd}`);
+        vis.title.text(`Broadway Attendance Data from ${vis.selectStart} to ${vis.selectEnd}`)
+        //document.getElementById(vis.titleElement).innerText="";
+        //document.getElementById(vis.titleElement)
+          //  .append(`Broadway Attendance Data from ${vis.selectStart} to ${vis.selectEnd}`);
     }
 }
