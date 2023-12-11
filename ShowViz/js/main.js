@@ -1,5 +1,6 @@
 let w = document.getElementById("s1").getBoundingClientRect().width;
 let h = document.getElementById("s1").getBoundingClientRect().height;
+let circles = [0, 1, 2];
 
 let svg1 = d3.select("#s1").append("svg")
     .attr("width", w)

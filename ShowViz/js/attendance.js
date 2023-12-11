@@ -172,6 +172,6 @@ class IsoType {
         let vis = this;
         vis.drawGraph(vis.percent);
         vis.title.attr("transform", "translate(0, 200)")
-            .text(`Broadway Attendance Data from ${vis.selectStart} to ${vis.selectEnd}`);
+            .text(`Broadway Attendance Data from ${new Date(vis.selectStart).toDateString()} to ${new Date(vis.selectEnd).toDateString()}`);
     }
 }
