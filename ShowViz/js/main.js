@@ -115,6 +115,7 @@ function change() {
     mohamedVis.updateVis();
 }
 function onClick(event) {
+    mohamedVis.info.remove();
     let seasonIndex = event.target.id.slice(11)
     grossVis.seasonIndex = seasonIndex;
     attendVis.seasonIndex = seasonIndex;
