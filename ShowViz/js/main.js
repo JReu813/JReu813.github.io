@@ -29,7 +29,7 @@ svg1.append('svg:image')
     .attr("height", h)
     .attr("transform", `translate(${w-326}, 0)`);
 
-let finalslide = d3.select("#s6").append("svg")
+let finalslide = d3.select("#s10").append("svg")
     .attr("width", w)
     .attr("height", h);
 finalslide.append('svg:image')
@@ -43,6 +43,7 @@ let dateParser = d3.timeParse("%Y-%m-%d");
 let timeLine,
     attenDance,
     broadwayMap,
+    broadwayMapPlain,
     myEmpVis,
     mohamedVis,
     grossVis,
@@ -82,6 +83,7 @@ function createVis(data) {
 
     attenDance = new IsoType("isotype", "title", totalSeats, weeklyCapacity);
     timeLine = new TimeLine("timeline", weeklyAttendance, weeklyCapacity);
+    broadwayMapPlain = new BroadwayMapPlain("broadway-map-plain", mapData)
     broadwayMap = new BroadwayMap("broadway-map", mapData);
     myEmpVis = new EmpVis('emp-vis', "s5", empData);
     mohamedVis = new MohamedVis("main", MohamedData);
