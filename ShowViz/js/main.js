@@ -98,12 +98,14 @@ function brushed() {
     // Convert the extent into the corresponding domain values
     let selectionDomain = selectionRange.map(timeLine.x.invert);
     let filtered = timeLine.weeks
-    console.log(selectionDomain)
     // Update focus chart (detailed information)
-    attenDance.filteredData = filtered.filter(d => dateParser(d.week) >= selectionDomain[0] &&
+    let lengthTest = filtered.filter(d => dateParser(d.week) >= selectionDomain[0] &&
         dateParser(d.week) <= selectionDomain[1]);
-    attenDance.selectStart = dateFormatter(selectionDomain[0]);
-    attenDance.selectEnd = dateFormatter(selectionDomain[1]);
+    if (lengthTest.length > 0) {
+        attenDance.filteredData = lengthTest;
+        attenDance.selectStart = dateFormatter(selectionDomain[0]);
+        attenDance.selectEnd = dateFormatter(selectionDomain[1]);
+    }
     attenDance.wrangleData();
 }
 
