@@ -243,10 +243,6 @@ class MohamedVis {
         vis.svg.select(".y-axis").call(vis.yAxis);
         vis.svg.select(".x-axis").call(vis.xAxis);
 
-        // Update axes
-        vis.svg.select(".y-axis").call(vis.yAxis);
-        vis.svg.select(".x-axis").call(vis.xAxis);
-
         if (vis.selectValue === "grossRevenue") {
             vis.title.text(`Gross Revenue by Broadway Season`);
         }

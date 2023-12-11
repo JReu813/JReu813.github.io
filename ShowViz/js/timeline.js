@@ -20,7 +20,7 @@ class TimeLine {
 
         vis.margin = {top: 20, right: 55, bottom: 20, left: 40};
 
-        vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - 2*vis.margin.left - 2*vis.margin.right;
+        vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - 2 * vis.margin.left - 2 * vis.margin.right;
         vis.height = (document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom);
 
 
@@ -29,7 +29,7 @@ class TimeLine {
             .attr("width", vis.width + vis.margin.left + vis.margin.right)
             .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
             .append("g")
-            .attr("transform", `translate(${2*vis.margin.left}, ${vis.margin.top})`);
+            .attr("transform", `translate(${2 * vis.margin.left}, ${vis.margin.top})`);
 
 
         // Scales and axes
@@ -71,7 +71,7 @@ class TimeLine {
         vis.svg.append("text")
             .attr("class", "title")
             .text("Weekly Attendance in All Broadway Theaters")
-            .attr("transform", `translate(${vis.width/2}, 30)`)
+            .attr("transform", `translate(${vis.width / 2}, 30)`)
 
         // (Filter, aggregate, modify data)
         vis.wrangleData();
@@ -88,19 +88,18 @@ class TimeLine {
     }
 
 
-
     /*
      * The drawing function
      */
 
     updateVis() {
         let vis = this;
-        vis.start = d3.min(vis.weeks, d=>d.week);
-        vis.stop = d3.max(vis.weeks, d=>d.week);
+        vis.start = d3.min(vis.weeks, d => d.week);
+        vis.stop = d3.max(vis.weeks, d => d.week);
         // Update domain
         vis.x.domain([vis.parseDate(vis.start), vis.parseDate(vis.stop)]);
-        vis.max = d3.max(vis.data, d=>d.attendance);
-        vis.y.domain([0, vis.max*1.1]);
+        vis.max = d3.max(vis.data, d => d.attendance);
+        vis.y.domain([0, vis.max * 1.1]);
 
         vis.area = d3.area()
             .curve(d3.curveCardinal)
@@ -116,10 +115,6 @@ class TimeLine {
             .attr("stroke", "#cca354")
             .attr("fill", "#444444");
 
-
-        // Update axes
-        vis.svg.select(".y-axis").call(vis.yAxis);
-        vis.svg.select(".x-axis").call(vis.xAxis);
 
         // Update axes
         vis.svg.select(".y-axis").call(vis.yAxis);

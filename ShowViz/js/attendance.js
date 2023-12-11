@@ -139,14 +139,13 @@ class IsoType {
         vis.container.append("text")
             .text(`${vis.avgCapacity.toFixed(2)}%`)
             .attr("id", "percent")
-            .attr("transform", `translate(${13+vis.width/2}, ${vis.height-40})`);
+            .attr("transform", `translate(${13+vis.width/2}, ${vis.height-39})`);
 
         vis.container.append("text")
             .text("of seats filled")
             .attr("id", "capacity")
-            .attr("transform", `translate(${11+vis.width/2}, ${vis.height-25})`);
+            .attr("transform", `translate(${11+vis.width/2}, ${vis.height-22})`);
     }
-
 
     //call function to draw the graph
     wrangleData() {
