@@ -73,6 +73,14 @@ class TimeLine {
             .text("Weekly Attendance in All Broadway Theaters")
             .attr("transform", `translate(${vis.width / 2}, 30)`)
 
+        vis.yaxis = vis.svg.append("g")
+            .attr("class", "axis-title")
+            .attr("transform", `translate(-50, ${vis.height/2})`);
+
+       vis.yaxis.append("text")
+            .text("Weekly Attendees")
+            .attr("transform", "rotate(270)");
+
         // (Filter, aggregate, modify data)
         vis.wrangleData();
     }
