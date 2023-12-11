@@ -139,12 +139,12 @@ class IsoType {
         vis.container.append("text")
             .text(`${vis.avgCapacity.toFixed(2)}%`)
             .attr("id", "percent")
-            .attr("transform", `translate(${13+vis.width/2}, ${vis.height-20})`);
+            .attr("transform", `translate(${13+vis.width/2}, ${vis.height-40})`);
 
         vis.container.append("text")
-            .text(`${Math.round(vis.avgCapacity * vis.totalSeats / 100)} out of ${vis.totalSeats} seats`)
+            .text("of seats filled")
             .attr("id", "capacity")
-            .attr("transform", `translate(${11+vis.width/2}, ${vis.height})`);
+            .attr("transform", `translate(${11+vis.width/2}, ${vis.height-25})`);
     }
 
 
