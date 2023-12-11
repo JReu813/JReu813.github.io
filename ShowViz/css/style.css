@@ -130,15 +130,15 @@ a:link {
 #broadway-map {
     align-self: center;
     margin: auto;
-    height: 100%;
-    width: 100%
+    height: 70%;
+    width: 80%
 }
 
 #broadway-map-plain {
     align-self: center;
     margin: auto;
-    height: 70%;
-    width: 80%
+    height: 80%;
+    width: 90%
 }
 
 #emp-vis {
@@ -214,4 +214,13 @@ h4 {
 
 h5 {
     padding-bottom: 10px;
+}
+
+#sources {
+    height: 80%;
+}
+
+.names {
+    text-anchor: middle;
+    font-size: 40px;
 }

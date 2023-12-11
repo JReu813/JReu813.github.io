@@ -20,7 +20,7 @@ class MohamedVis {
     initVis() {
         let vis = this;
 
-        vis.margin = {top: 30, right: 40, bottom: 20, left: 100};
+        vis.margin = {top: 30, right: 40, bottom: 40, left: 100};
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = (document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom);
@@ -143,6 +143,11 @@ class MohamedVis {
 
         vis.yAxisTitle = vis.yaxis.append("text")
             .attr("transform", "rotate(270)");
+
+        vis.svg.append("text")
+            .text("Broadway Season")
+            .attr("class", "axis-title")
+            .attr("transform", `translate(${vis.width/2}, ${vis.height+35})`);
 
         // (Filter, aggregate, modify data)
         vis.wrangleData();
