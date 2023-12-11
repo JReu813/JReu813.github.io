@@ -127,6 +127,13 @@ a:link {
 #broadway-map {
     align-self: center;
     margin: auto;
+    height: 100%;
+    width: 100%
+}
+
+#broadway-map-plain {
+    align-self: center;
+    margin: auto;
     height: 70%;
     width: 80%
 }
