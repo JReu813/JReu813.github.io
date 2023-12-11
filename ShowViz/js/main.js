@@ -83,7 +83,7 @@ function createVis(data) {
     attenDance = new IsoType("isotype", "title", totalSeats, weeklyCapacity);
     timeLine = new TimeLine("timeline", weeklyAttendance, weeklyCapacity);
     broadwayMap = new BroadwayMap("broadway-map", mapData);
-    myEmpVis = new EmpVis('emp-vis', empData);
+    myEmpVis = new EmpVis('emp-vis', "s5", empData);
     mohamedVis = new MohamedVis("main", MohamedData);
     grossVis = new MiniVis("grossRevenue", MohamedData)
     attendVis = new MiniVis("attendance", MohamedData)

@@ -1,7 +1,8 @@
 class EmpVis {
 
-    constructor(parentElement, data) {
+    constructor(parentElement, tooltipElement, data) {
         this.parentElement = parentElement;
+        this.tooltipElement = tooltipElement;
         this.empData = data;
 
         this.initVis();
@@ -32,7 +33,7 @@ class EmpVis {
             .attr('text-anchor', 'middle');
 
         // tooltip
-        vis.tooltip = d3.select("#s4").append('div')
+        vis.tooltip = d3.select(`#${vis.tooltipElement}`).append('div')
             .attr('class', "tooltip")
             .attr('id', 'barTooltip')
 
