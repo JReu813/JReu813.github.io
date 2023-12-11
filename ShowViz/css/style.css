@@ -189,3 +189,11 @@ text {
 .axis-title {
     text-anchor: middle;
 }
+
+#emp-vis {
+    height: 50vh;
+}
+
+#emp-tooltip {
+    height: 10vh;
+}
