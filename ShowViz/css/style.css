@@ -214,6 +214,10 @@ text {
     height: 10vh;
 }
 
+#emp {
+    height: 80vh;
+}
+
 h4 {
     padding-top: 10px;
 }
@@ -229,4 +233,10 @@ h5 {
 .names {
     text-anchor: middle;
     font-size: 40px;
+}
+
+#overview-comment {
+    margin: 0;
+    padding: 0;
+    height: 1vh;
 }
