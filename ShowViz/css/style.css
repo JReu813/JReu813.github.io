@@ -37,6 +37,24 @@ body {
     padding: 250px 125px 250px 125px;
 }
 
+#s5 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#s6 {
+    color: black;
+    text-align: center;
+    padding: 300px 0;
+}
+
+#s8 {
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+
 #timeline {
     height: 70%;
     width: 100%;
