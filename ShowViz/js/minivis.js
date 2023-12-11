@@ -79,6 +79,12 @@ class MiniVis {
             .attr("class", "minititle")
             .attr("transform", `translate(${vis.width/2+31}, -5)`);
 
+        vis.yaxis = vis.svg.append("g")
+            .attr("class", "axis-title");
+
+        vis.yAxisTitle = vis.yaxis.append("text")
+            .attr("transform", "rotate(270)");
+
         // (Filter, aggregate, modify data)
         vis.wrangleData();
     }
@@ -122,18 +128,26 @@ class MiniVis {
         if (vis.parentElement === "grossRevenue") {
             vis.totalVal.text(`${(vis.data[vis.seasonIndex][vis.parentElement].total/1000000000).toFixed(3)} Bil`);
             vis.title.text(`${vis.data[vis.seasonIndex].season} Season's Gross Revenue`);
+            vis.yaxis.attr("transform", `translate(-71, ${vis.height/2})`);
+            vis.yAxisTitle.text("Total USD");
         }
         else if (vis.parentElement === "attendance") {
             vis.totalVal.text(`${(vis.data[vis.seasonIndex][vis.parentElement].total/1000000).toFixed(2)} Mil`)
             vis.title.text(`${vis.data[vis.seasonIndex].season} Season's Attendance`);
+            vis.yaxis.attr("transform", `translate(-61, ${vis.height/2})`);
+            vis.yAxisTitle.text("Total Attendees");
         }
         else if (vis.parentElement === "weeksPlaying") {
             vis.totalVal.text(`${vis.data[vis.seasonIndex][vis.parentElement].total}`);
             vis.title.text(`${vis.data[vis.seasonIndex].season} Season's Total Playing Weeks`);
+            vis.yaxis.attr("transform", `translate(-40, ${vis.height/2})`);
+            vis.yAxisTitle.text("Total Weeks of Performance");
         }
         else {
             vis.totalVal.text(`${vis.data[vis.seasonIndex][vis.parentElement].total}`);
             vis.title.text(`${vis.data[vis.seasonIndex].season} Season's New Productions`);
+            vis.yaxis.attr("transform", `translate(-30, ${vis.height/2})`);
+            vis.yAxisTitle.text("Number of New Productions");
         }
 
     }

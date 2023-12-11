@@ -90,10 +90,6 @@ class MohamedVis {
             .text("in-depth view of each season!")
             .attr("transform", "translate(165, 15)");
 
-        vis.yaxis = vis.svg.append("g")
-            .append("text")
-            .attr("class", "axisLabel");
-
         vis.svg.append("g")
             .attr("class", "x-axis axis")
             .attr("transform", `translate(0, ${vis.height})`);
@@ -128,13 +124,19 @@ class MohamedVis {
             .append("circle")
             .attr("id", (d, i) => `mohamedcirc${i}`)
             .attr("cx", d => vis.x(d.season))
-            .attr("r", 9)
+            .attr("r", 8)
             .attr("fill", vis.colors[3])
             .attr("stroke", "black")
             .on("mouseover", vis.mouseover)
             .style("cursor", "hand")
             .on("mouseout", vis.mouseout)
             .on("click", onClick);
+
+        vis.yaxis = vis.svg.append("g")
+            .attr("class", "axis-title");
+
+        vis.yAxisTitle = vis.yaxis.append("text")
+            .attr("transform", "rotate(270)");
 
         // (Filter, aggregate, modify data)
         vis.wrangleData();
@@ -263,15 +265,23 @@ class MohamedVis {
 
         if (vis.selectValue === "grossRevenue") {
             vis.title.text(`Gross Revenue by Broadway Season`);
+            vis.yaxis.attr("transform", `translate(-71, ${vis.height/2})`);
+            vis.yAxisTitle.text("Total USD");
         }
         else if (vis.selectValue === "attendance") {
             vis.title.text(`Attendance by Broadway Season`);
+            vis.yaxis.attr("transform", `translate(-61, ${vis.height/2})`);
+            vis.yAxisTitle.text("Total Attendees");
         }
         else if (vis.selectValue === "weeksPlaying") {
             vis.title.text(`Total Playing Weeks by Broadway Season`);
+            vis.yaxis.attr("transform", `translate(-40, ${vis.height/2})`);
+            vis.yAxisTitle.text("Total Weeks of Performance");
         }
         else {
             vis.title.text(`New Productions by Broadway Season`);
+            vis.yaxis.attr("transform", `translate(-30, ${vis.height/2})`);
+            vis.yAxisTitle.text("Number of New Productions");
         }
     }
     mouseover(event) {
