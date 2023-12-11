@@ -12,7 +12,7 @@ class EmpVis {
         let vis = this;
         console.log("success")
 
-        vis.margin = {top: 20, right: 20, bottom: 20, left: 40};
+        vis.margin = {top: 20, right: 30, bottom: 20, left: 40};
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;

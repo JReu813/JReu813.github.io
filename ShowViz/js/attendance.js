@@ -172,9 +172,6 @@ class IsoType {
     updateVis() {
         let vis = this;
         vis.drawGraph(vis.percent);
-        vis.title.text(`Broadway Attendance Data from ${vis.selectStart} to ${vis.selectEnd}`)
-        //document.getElementById(vis.titleElement).innerText="";
-        //document.getElementById(vis.titleElement)
-          //  .append(`Broadway Attendance Data from ${vis.selectStart} to ${vis.selectEnd}`);
+        vis.title.text(`Broadway Attendance Data from ${vis.selectStart} to ${vis.selectEnd}`);
     }
 }
