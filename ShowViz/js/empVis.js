@@ -119,7 +119,7 @@ class EmpVis {
                         .style("left", event.pageX + "px")
                         .style("top", event.pageY + "px")
                         .html(`
-                                 <div style="border: thin solid grey; border-radius: 5px; background: darkred; padding: 20px">
+                                 <div style="border: thin solid grey; border-radius: 5px; background: #cca354; padding: 10px; font-family: serif">
                                  <h4> Year: ${d.year}</h4>
                                  <h4> Employees in the theater industry: ${d["employees"]}</h4>
                              </div>`);
